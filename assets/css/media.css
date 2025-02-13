@@ -1,0 +1,226 @@
+/* *=============> Root <============= */
+:root {
+  font-size: 16px;
+}
+
+/* *=============> Container <============= */
+@media screen and (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    padding-inline: 15px;
+  }
+}
+
+/* *=============> Navbar <============= */
+@media screen and (max-width: 1200px) {
+  nav .menu-icon {
+    display: block;
+  }
+
+  nav ul {
+    transform: translateX(100%);
+    flex-direction: column;
+    background-color: var(--light-color);
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    padding-inline: 15px;
+    gap: 0px;
+  }
+
+  nav ul li {
+    padding-block: 15px;
+  }
+
+  nav ul li.close-icon {
+    display: block;
+    text-align: right;
+  }
+
+  nav ul li.close-icon a {
+    font-size: 25px;
+  }
+
+  nav .toggle-mode {
+    margin-left: auto;
+    margin-right: 15px;
+  }
+}
+
+/* ^=============> Header <============= */
+@media screen and (min-width: 1200px) {
+  header {
+    min-height: 100vh;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  header .container {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  header .container > * {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header .header-content {
+    margin-top: 30px;
+  }
+
+  header .btn-main {
+    --border-radius: 100vh;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  header .buttons-group {
+    flex-direction: column;
+  }
+}
+
+/* ^=============> Chefs <============= */
+@media screen and (max-width: 992px) {
+  .chefs-cards .card {
+    width: calc(calc(100% - var(--gap)) / 2);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .chefs-cards .card {
+    width: 100%;
+  }
+}
+
+/* ?===============> Gallery <=============== */
+@media screen and (max-width: 1400px) {
+  .gallery .gallery-photos {
+    height: 1000px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .gallery .gallery-photos {
+    height: 840px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .gallery .gallery-photos {
+    height: 1400px;
+  }
+
+  .gallery .gallery-photos picture {
+    width: calc(calc(100% - var(--gap)) / 2);
+  }
+
+  .pizza {
+    order: 1;
+  }
+
+  .pizza-slices {
+    order: 3;
+  }
+
+  .steak {
+    order: 5;
+  }
+
+  .omelette {
+    order: 4;
+  }
+
+  .burger {
+    order: 2;
+  }
+
+  .fried {
+    order: 6;
+  }
+
+  .kofta {
+    order: 7;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .gallery .gallery-photos {
+    height: auto;
+  }
+  .gallery .gallery-photos picture {
+    width: 100%;
+  }
+}
+
+/* !==============> Contact <=============== */
+@media screen and (max-width: 992px) {
+  .contact form .input-group input {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact .details > div {
+    width: 100%;
+  }
+}
+
+/* *==============> Footer <===============  */
+@media screen and (max-width: 1200px) {
+  footer :is(.about, .contact-details) {
+    width: calc(calc(100% - 2 * var(--gap)) / 2);
+    order: 1;
+  }
+
+  footer :is(.subscription) {
+    width: 100%;
+    order: 2;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  footer .container > div {
+    width: 100%;
+    order: 0;
+  }
+
+  footer .subscription-box {
+    flex-direction: column;
+  }
+}
